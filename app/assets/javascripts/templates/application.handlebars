@@ -1,0 +1,17 @@
+<div id='nav-column'>
+  <div id='logo'></div>
+  <div id='search-nav'{{action 'search'}}></div>
+  <h4>Discover</h4>
+  <h4>Radio</h4>
+  <h4>Playlists</h4>
+</div>
+
+<div id='main'>
+
+  {{partial "search"}}
+  {{fullName person}}
+
+  <div>
+    {{outlet}}
+  </div>
+</div>
