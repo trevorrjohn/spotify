@@ -12,4 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require spotify
+Spotify = Ember.Application.create();
+
 //= require_tree .
