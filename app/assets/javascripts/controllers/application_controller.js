@@ -1,12 +1,16 @@
 Spotify.ApplicationController = Ember.Controller.extend({
-  search: function () {
-    this.set('isSearchOpen', !this.get('isSearchOpen'));
+  displaySearch: false,
+
+  showSearch: function () {
+    this.set('displaySearch', !this.get('displaySearch'));
   },
 
   person: function () {
-    return Spotify.Person.createRecord({
+    var person = Spotify.Person.createRecord({
       firstName: 'TJ',
       lastName: 'Smith'
     });
+    window.person = person;
+    return person;
   }.property()
 });

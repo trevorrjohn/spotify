@@ -1,14 +1,15 @@
 <div id='nav-column'>
   <div id='logo'></div>
-  <div id='search-nav'{{action 'search'}}></div>
+  <div id='search-nav'{{action 'showSearch'}}></div>
   <h4>Discover</h4>
   <h4>Radio</h4>
   <h4>Playlists</h4>
 </div>
 
 <div id='main'>
-
-  {{partial "search"}}
+  {{#if displaySearch}}
+    {{partial "search"}}
+  {{/if}}
   {{fullName person}}
 
   <div>
