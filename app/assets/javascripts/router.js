@@ -1,3 +1,6 @@
+Spotify.Router.reopen({
+  location: 'history'
+});
+
 Spotify.Router.map(function() {
-  this.resource("index", { path: "/" })
 });
